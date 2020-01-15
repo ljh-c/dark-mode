@@ -6,10 +6,11 @@ const useDarkMode = () => {
 
   useEffect(() => {
     if (isDark) {
-      console.log('value in storage is dark!');
+      console.log('Value in storage is dark!');
       document.body.classList.add('dark-mode');
     } else {
-      document.bodyclassList.remove('dark-mode');
+      console.log('Value in storage is not dark!')
+      document.body.classList.remove('dark-mode');
     }
   }, [isDark]);
 
